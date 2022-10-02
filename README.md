@@ -15,7 +15,6 @@ Solution 2.)
 a) Unique key prop is missing for List items.<br>
 
          <b>
-         <pre> 
          <ul style={{ textAlign: 'left' }}>
             {items.map((item, index) => (
               <SingleListItem
@@ -25,7 +24,6 @@ a) Unique key prop is missing for List items.<br>
                isSelected={selectedIndex}
                 />
             ))}
-            </pre>
             </b>
 <br>
 b) Function reference instead of a function call on *onClick* event.
@@ -37,8 +35,7 @@ b) Function reference instead of a function call on *onClick* event.
 </li></b>
           <br>
 c) useState variables is not placed at correct position<br>
-       <b> <pre> 
-        const [setSelectedIndex, selectedIndex] = useState();
+       <b> <pre> const [setSelectedIndex, selectedIndex] = useState();
        </pre></b><br>
          
 d) In mainstream we don't like defining props as NULL<br>
